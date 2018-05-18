@@ -75,7 +75,7 @@ while I am on the said tour.<br>7.That I am in knowledge of the fact that expens
 
 	    if($mail->send()){
        echo "<script>window.alert('Form filled successfully')</script>";
-				echo "<script>window.open('payment.php','_self')</script>";
+				echo "<script>window.open('choose.php','_self')</script>";
     } else {
          echo "Mailer Error: " . $mail->ErrorInfo;
     }

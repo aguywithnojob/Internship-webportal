@@ -1,14 +1,19 @@
 <?php
-	require_once('config.php');
- 
-?>
-<html>
-	<head>
-		<title>
-			3 WEEKS
-		</title>
-		<meta name="viewport" content="width=device-width">
-		<meta name="description" content="Website" />
+	session_start();
+
+	?>
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title Of Site -->
+	<title>Internship</title>
+
+	<meta name="description" content="Website" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="Website">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -43,8 +48,7 @@
 	<!-- CSS Custom -->
 	<link href="css/style.css" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="js/script.js"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -53,7 +57,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<style>
-  @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -450,23 +454,16 @@
   
 }
 .right{
-
   float: right;
   width:675px;
   height: 450px ;
   display: inline;
   position: absolute;
 }
-
-.right-text a:hover{
-    background-color: #fff;
-    color: red !important;
-    border-color: red !important;
-    
-    
-  }
 .mySlides {display:none;}
-
+.not-transparent-header .container-wrapper{
+  padding-top: 0px !important;
+}
 @media only screen and (max-width: 400px) {
   .logo-wrapper{
     
@@ -483,7 +480,7 @@
   }
   .section-title h2{
     margin-left: 30px !important;
-    margin-top: 480px !important;
+    margin-top: 20px;
   }
   .slicknav_btn.slicknav_collapsed{
     margin-left: -54px !important;
@@ -496,53 +493,27 @@
     
 }
 .right{
-  z-index: 1 !important;
       display: block;
     top: 200px;
     width: 400px;
     height: 240px;
     position: relative;
   }
-
-  .right-text a{
-    margin-left: 120px !important;
-
-  }
-}
-.not-transparent-header .container-wrapper{
-  padding: 0px !important;
 }
 </style>
-		<style>
-		.razorpay-payment-button{
-			margin-top: 100px;
-			margin-left: 500px;
-			background-color:#8080ff;
-			color: white;
-			width: 150px;
-			height: 40px;
-			margin-bottom: 100px;
-		}
-    .razorpay-payment-button:hover{
-      background-color: #404081;
-    }
+</head>
 
-  @media only screen and (max-width: 400px) {
-      .razorpay-payment-button{
-          margin-left: 100px !important;
-      }
-         
-  }		
-}
 
-		</style>
-	</head>
-	<body class="not-transparent-header">
+<body class="not-transparent-header">
+
+	<!-- start Container Wrapper -->
 	<div class="container-wrapper">
-				<header id="header">
+
+		<!-- start Header -->
+		<header id="header">
 
 			<!-- start Navbar (Header) -->
-<div id='cssmenu'>
+			<div id='cssmenu'>
 				<ul>
                    <li>
                             
@@ -608,79 +579,110 @@
 		<div class="logo-wrapper">
 			<a href="#"><img src="images/logo.jpg" ></a>			
 		</div>
-		<div class="main-wrapper">
 
-			<!-- start hero-header -->
+		<!-- start Main Wrapper -->
+		<div class="main-wrapper">
+		
+			<!-- start breadcrumb -->
 			<div class="breadcrumb-wrapper">
 			
 				<div class="container">
 				
-					<ol class="breadcrumb-list">
+					<ol class="breadcrumb-list booking-step">
 						<li><a href="Home.php">Home</a></li>
-						<li><span>Payment Page</span></li>
+						
+						<li><span>Internship</span></li>
 					</ol>
 					
 				</div>
 				
 			</div>
-			<!-- end hero-header -->
-		<div class="container">
-		<div class="row">
-		<div class="col-md-12 col-sm-12 col-xs-12">
-    <?php 
-      if($_SERVER["REQUEST_METHOD"]=="POST"){
-          if(isset($_POST['inr'])=="inr"){
-             echo" <form action='paymentsuccess.php' method='POST'>";
-          //INR IN PAISE  
-      echo"<script
-    src='https://checkout.razorpay.com/v1/checkout.js'
-    data-key='". $razor_api_key."'
-    data-amount='16000000'
-    data-buttontext='Proceed to pay'
-    data-name='quixoticservice'
-    data-description='Payment'
-    data-image='images/logo.jpg'
-    data-prefill.name='your name'
-    data-prefill.email='your email'
-    data-theme.color='#F37254'
-   
-            ></script>
+			<!-- end breadcrumb -->
+			
+			<div class="section">
+			
+				<div class="container">
+				
+					<div class="row">
+					
+						<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+						
+							<div class="section-title bb">
+							
+								<h2>3 Weeks Program </h2>
+								
+							</div>
 
-        <input type='hidden' value='Hidden Element' name='hidden'>
-        </form>";
-          }
-          if(isset($_POST['euro'])=="euro"){
-            echo" <form action='paymentsuccess.php' method='POST'>";
-          //INR IN PAISE  
-      echo"<script
-    src='https://checkout.razorpay.com/v1/checkout.js'
-    data-key='". $razor_api_key."'
-    data-amount='16000000'
-    data-buttontext='Proceed to pay'
-    data-name='quixoticservice'
-    data-description='Payment'
-    data-image='images/logo.jpg'
-    data-prefill.name='your name'
-    data-prefill.email='your email'
-    data-theme.color='#F37254'
-   
-            ></script>
+						</div>
+					
+					</div>
+							<div class="container">
+								<div class="row">
+								<div class="col-md-6 col-sm-12 ">
+									<h3>Program Details</h3>
+                    <h4>Specific Topics for 3hours each in University in Paris:</h4>
+                    <p>a) Big Data Management (3hours)<br>
+b) Artificial Intelligence (3hours)<br>
+c) Data Analytics (3hours)<br>
+d) Negotiation and conflict Management (3hours)<br>
+e) Design Thinking (3hours)<br>
+f) Team Building (3hours)<br></p>
+                    <h4>General Topic:</h4>
+                    <p>
+                        a) European Economy (3hours)<br>
+b) French Culture (3hours)<br>
 
-        <input type='hidden' value='Hidden Element' name='hidden'>
-        </form>";
-          }
-      }
-    ?>
-		
-</div>
-</div>
-</div>
 
-<footer class="footer-wrapper">
+                    </p>
+                      <h4>Academic Partner and Previous Participants’ from India:</h4>
+                      <p>
+                          Indian Institute of Technology-Bombay Indian Institute of technology-Delhi<br>
+• Symbiosis International University (around 10 collages participated from the university Umbrella)<br> • Amrita University<br> • Alliance University<br> • Maharashtra Institute of Technology (MIT-Pune)<br> • NIILM Center for Management Studies<br> • IMT Ghaziabad
+<br>• IIM Lucknow <br>• IIM Kozhikode <br>• IIM Indore<br> • Indian Institute of Science, Bangalore <br>• Narsee Monjee University(NMIMS, Mumbai)
+
+                      </p>
+                    
+								</div>
+								<div class="col-md-6 col-sm-12">
+									 <h4>No. of Participants:<b> Minimum 15 and Maximum 30</b></h4>
+                   <h4>Cost: <b>€ 2000</b></h4>
+                   <h4>Cost Include:</h4>
+                    <p>
+                      Tuition Fees<br>
+Accommodation<br>
+Welcome Kit<br>
+Visit to Bruselles (European Commission and European Parliamentarian) including accommodation, travel and breakfast<br>
+Breakfast, Subsidized Lunch and Breakfast<br>Completion Participation Certificate 2 ECTS (credit transfer, if required)<br>
+2 Sessions with leading companies in Paris
+                    </p>
+                   <h4>Other Minimal Charges:</h4>
+                  <p>
+  								Cultural excursion with Collage Intern in Paris by local transportation 2 weeks cost @ 47euros (it includes bus, tram, metro, RER for all 5 zones)<br>
+• Eiffel Tower (11 EUROS ticket) <br>• Louvre Meauseam <br>• Disneyland(80 euros for two parks full day ticket) <br>• Triumph de Arch <br>• Avenue Champs lyseé <br>• Sacred Heart Church<br> • Montmartre <br>• Saint Michel Notre Dame<br> • Chatelet Les Halles (Shopping street) <br>• Gare du Nord, etc.
+									</p>
+								</div>
+								
+								
+								</div>
+								 <div class="row">
+                    <div class="col-md-6 ">
+                       <a href="form2.php" class="msc" style="margin-left:500px; "><button  class="btn btn-primary mt-5">Register Now</button></a>  
+                    </div>
+                </div>
+							</div>
+		 </div>
+		 </div>
+
+
+				</div>
+			
+			</div>
+
+					<footer class="footer-wrapper">
 			
 				<div class="main-footer">
 				
-				<div class="container" style="margin-left:15px;">
+					<div class="container" style="margin-left:15px;">
 					
 						<div class="row">
 						
@@ -740,7 +742,7 @@ Our services include providing career management on different courses viz MBA, B
 								
 							</div>
 							
-							
+								
 							<div class="col-sm-4 col-md-4">
 								<ul class="bottom-footer-menu for-social">
 									<li><a href="#"><i class="fab fa-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
@@ -757,6 +759,53 @@ Our services include providing career management on different courses viz MBA, B
 				</div>
 			
 			</footer>
-			</div>
-	</body>
+		
+	</div> <!-- / .wrapper -->
+	<!-- end Container Wrapper -->
+ 
+ 
+<!-- start Back To Top -->
+<div id="back-to-top">
+   <a href="#"><i class="fas fa-angle-up"></i></a>
+</div>
+<!-- end Back To Top -->
+
+
+<!-- JS -->
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
+<script type="text/javascript" src="js/bootstrap-modal.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-tokenfield.js"></script>
+<script type="text/javascript" src="js/typeahead.bundle.min.js"></script>
+<script type="text/javascript" src="js/bootstrap3-wysihtml5.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/jquery-filestyle.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+<script type="text/javascript" src="js/handlebars.min.js"></script>
+<script type="text/javascript" src="js/jquery.countimator.js"></script>
+<script type="text/javascript" src="js/jquery.countimator.wheel.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/easy-ticker.js"></script>
+<script type="text/javascript" src="js/jquery.introLoader.min.js"></script>
+<script type="text/javascript" src="js/jquery.responsivegrid.js"></script>
+<script type="text/javascript" src="js/customs.js"></script>
+
+<script type="text/javascript" src="js/fileinput.min.js"></script>
+<script type="text/javascript" src="js/customs-fileinput.js"></script>
+
+<script type="text/javascript" src="js/jquery.sheepItPlugin.js"></script>
+<script type="text/javascript" src="js/customs-sheepItPlugin.js"></script>
+
+</body>
+
+
 </html>

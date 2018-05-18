@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Title Of Site -->
-	<title>Gallery</title>
+	<title>Country</title>
 
 	<meta name="description" content="Website" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
@@ -552,7 +552,13 @@
                                     <li><a href="career.php">Career Counselling</a></li>
                                     <li><a href="help.php">How can we Help</a></li>
                                     <li><a href="visa.php">Visa Assistance</a></li>
-                                    <li><a href="country.php">Countries We represent</a></li>
+                                    <li><a href="country.php">Countries we represent</a></li>
+                                    <li><a href="#">Internship</a>
+                                    <ul>
+                                        <li><a href="2week.php">2 Weeks</a></li>
+                                        <li><a href="3week.php">3 Weeks</a></li>
+                                    </ul>
+                                    </li>
                                     <li><a href="msc.php">MSC in international management</a></li>
                                 </ul>
                             </li>

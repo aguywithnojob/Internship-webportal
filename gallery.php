@@ -470,6 +470,10 @@
 .not-transparent-header .container-wrapper{
   padding-top: 0px !important;
 }
+.faulty{
+      height: 426.75px;
+    width: 569px;
+}
 @media only screen and (max-width: 400px) {
   .logo-wrapper{
     
@@ -558,7 +562,13 @@
                                     <li><a href="career.php">Career Counselling</a></li>
                                     <li><a href="help.php">How can we Help</a></li>
                                     <li><a href="visa.php">Visa Assistance</a></li>
-                                    <li><a href="country.php">Countries We represent</a></li>
+                                    <li><a href="country.php">Countries we represent</a></li>
+                                    <li><a href="#">Internship</a>
+                                    <ul>
+                                        <li><a href="2week.php">2 Weeks</a></li>
+                                        <li><a href="3week.php">3 Weeks</a></li>
+                                    </ul>
+                                    </li>
                                     <li><a href="msc.php">MSC in international management</a></li>
                                 </ul>
                             </li>
@@ -640,7 +650,7 @@
                   <img src="images/gallery/6.jpg">
                 </div>
 								<div class="col-md-6 col-xsm-6">
-									<img src="images/gallery/7.jpg">
+									<img src="images/gallery/7.jpg" class="faulty">
 								</div>
 								<div class="col-md-6 col-xsm-6">
 									<img src="images/gallery/8.jpg">
@@ -689,10 +699,10 @@
                 </div>
                  
                 <div class="col-md-6 col-xsm-6">
-                  <img src="images/gallery/21.jpg">
+                  <img src="images/gallery/21.jpg" class="faulty">
                 </div>
                 <div class="col-md-6 col-xsm-6">
-                  <img src="images/gallery/22.jpeg">
+                  <img src="images/gallery/22.jpeg" class="faulty">
                 </div>
                 
                 </div>
